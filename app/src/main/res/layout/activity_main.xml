@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_margin="50dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Đăng Nhập"
+    android:textSize="40dp"
+    android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edtnameL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email hoặc tên đăng nhập"
+        android:layout_marginTop="50dp"
+        android:padding="15dp"
+        android:background="@drawable/edit"/>
+    <EditText
+        android:id="@+id/edtpassL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật Khẩu"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:background="@drawable/edit"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/btnL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Nhập"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/btnt"/>
+    <TextView
+        android:id="@+id/quen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên Mật Khẩu"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn chưa có tài khoản?"/>
+        <TextView
+            android:id="@+id/btntravel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng Ký"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

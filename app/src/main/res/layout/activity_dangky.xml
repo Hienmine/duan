@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký"
+        android:textSize="40dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edttenS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Họ Và Tên"
+        app:backgroundTint="@null"
+        android:background="@drawable/edit"
+        android:padding="15dp"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/edtdateS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ngày tháng năm sinh"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/edit"
+        android:padding="15dp"
+        android:inputType="datetime"
+        />
+    <EditText
+        android:id="@+id/edtdiachi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập địa gồm(số nhà,đường,xã,thành phố)"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/edit"
+        android:padding="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giới tính:"
+        android:layout_marginTop="20dp"/>
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left">
+            <RadioButton
+                android:id="@+id/rnam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam"/>
+            <RadioButton
+                android:id="@+id/rnu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nữ"
+                android:layout_marginLeft="20dp"/>
+        </RadioGroup>
+    <EditText
+        android:id="@+id/edtnmeS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email hoặc tên đăng nhập"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:background="@drawable/edit"
+        android:inputType="textWebEmailAddress"/>
+    <EditText
+        android:id="@+id/passS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:background="@drawable/edit"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/Cpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập lại mật khẩu của bạn"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:background="@drawable/edit"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập lại Mã nhân viên của bạn(nếu bạn là nhân viên)"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:background="@drawable/edit"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/btnS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/btnt"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn đã có tài khoản?"/>
+        <TextView
+            android:id="@+id/btntrave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng Nhập"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/page2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end">
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="68dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="+"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            app:backgroundTint="@null"
+            android:background="@drawable/btnadd"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="12dp">
+
+    <TextView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Top sản phẩm bán chạy" android:textStyle="bold" android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginTop="12dp">
+
+        <EditText
+            android:id="@+id/edFromTop"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:hint="Từ ngày (YYYY-MM-DD)"
+            android:inputType="datetime" />
+
+        <EditText
+            android:id="@+id/edToTop"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:hint="Đến ngày (YYYY-MM-DD)"
+            android:inputType="datetime" android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginTop="8dp">
+
+        <Spinner
+            android:id="@+id/spStatus"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/edLimit"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_marginStart="8dp"
+            android:hint="Top N (mặc định 10)" android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnFilterTop"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Lọc" android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTopProducts"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="invoice_status">
+        <item>Chờ xác nhận</item>
+        <item>đã thanh toán</item>
+        <item>chưa thanh toán</item>
+    </string-array>
+    <string-array name="invoice_status_filter">
+        <item>Tất cả</item>
+        <item>đã thanh toán</item>
+        <item>Chờ xác nhận</item>
+        <item>chưa thanh toán</item>
+    </string-array>
+</resources>

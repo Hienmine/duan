@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Họ tên"/>
+
+        <EditText
+            android:id="@+id/edUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username" />
+
+        <EditText
+            android:id="@+id/edPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            />
+
+        <EditText
+            android:id="@+id/edGioiTinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giới tính (Nam/Nữ)"/>
+
+        <EditText
+            android:id="@+id/edDiaChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Địa chỉ"/>
+
+        <EditText
+            android:id="@+id/edTuoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tuổi"
+            android:inputType="number"/>
+    </LinearLayout>
+</ScrollView>

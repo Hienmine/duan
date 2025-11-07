@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Thông tin người dùng" android:textStyle="bold" android:textSize="18sp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Username" android:layout_marginTop="12dp"/>
+        <EditText
+            android:id="@+id/edUsername" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:enabled="false"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Họ tên" android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/edName" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Nhập họ tên"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Giới tính (Nam/Nữ)" android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/edGender" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Nam / Nữ"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Địa chỉ" android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/edAddress" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Nhập địa chỉ"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Tuổi" android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/edAge" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="number" android:hint="Nhập tuổi"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Vai trò" android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/edRole" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:enabled="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="end"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnSave" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Lưu"/>
+
+            <Button
+                android:id="@+id/btnChangePass" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Đổi mật khẩu" android:layout_marginStart="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

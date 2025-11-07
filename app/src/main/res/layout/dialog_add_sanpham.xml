@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgPreviewAdd"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        android:background="#EEEEEE"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên sản phẩm"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/edtNameAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên sản phẩm"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/edtPriceAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ví dụ: 12990000"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mô tả"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/edtMotaAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô tả ngắn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tồn kho"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/edtTonkhoAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số lượng"
+        android:inputType="number"/>
+
+    <!-- Nếu bạn đã có danh mục, thay bằng Spinner; tạm thời cho nhập id -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Danh mục (tùy chọn)"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/edtIddmAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="VD: 1"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnSaveAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>

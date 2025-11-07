@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:id="@+id/duoi"
+            android:icon="@drawable/home"
+            android:title="home"/>
+        <item android:id="@+id/duoi2"
+            android:icon="@drawable/danhmuc"
+            android:title="danh mục"/>
+        <item android:id="@+id/duoi3"
+            android:icon="@drawable/outline_supervised_user_circle_24"
+            android:title="nhân viên"/>
+        <item android:id="@+id/duoi4"
+            android:icon="@drawable/khac"
+            android:title="khác"/>
+</menu>

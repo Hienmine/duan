@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="12dp">
+
+    <TextView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Doanh thu theo sản phẩm" android:textStyle="bold" android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginTop="12dp">
+
+        <EditText
+            android:id="@+id/edFrom"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:hint="Từ ngày (YYYY-MM-DD)"
+            android:inputType="datetime" />
+
+        <EditText
+            android:id="@+id/edTo"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:hint="Đến ngày (YYYY-MM-DD)"
+            android:inputType="datetime" android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Lọc" android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Tổng doanh thu: 0 đ" android:layout_marginTop="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRevenue"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

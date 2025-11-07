@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent" android:layout_height="220dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Tên SP" android:textStyle="bold" android:textSize="18sp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="0 đ" android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Mô tả..." android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="12dp">
+
+            <EditText
+                android:id="@+id/edQty"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:inputType="number"
+                android:hint="Số lượng" android:text="1" />
+
+            <Button
+                android:id="@+id/btnAddToCart"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Thêm vào giỏ" android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGoCart"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Xem giỏ hàng" android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>

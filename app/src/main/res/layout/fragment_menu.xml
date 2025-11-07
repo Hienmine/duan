@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent" android:layout_height="match_parent">-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent" android:layout_height="wrap_content"-->
+<!--        android:padding="16dp">-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btnUsers"-->
+<!--            style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--            android:layout_width="0dp" android:layout_height="wrap_content"-->
+<!--            android:text="Người dùng"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"/>-->
+<!--        -->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btnStats"-->
+<!--            style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--            android:layout_width="0dp" android:layout_height="wrap_content"-->
+<!--            android:text="Thống kê"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/btnUsers"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:layout_marginTop="12dp"/>-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btnInvoices"-->
+<!--            style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--            android:layout_width="0dp" android:layout_height="wrap_content"-->
+<!--            android:text="Hóa đơn"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/btnStats"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:layout_marginTop="12dp"/>-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btnRevenue"-->
+<!--            style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--            android:layout_width="0dp" android:layout_height="wrap_content"-->
+<!--            android:text="Doanh thu"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/btnInvoices"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:layout_marginTop="12dp"/>-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btnTopProducts"-->
+<!--            style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--            android:layout_width="0dp" android:layout_height="wrap_content"-->
+<!--            android:text="Top sản phẩm"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/btnRevenue"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:layout_marginTop="12dp"/>-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btnChangePass"-->
+<!--            style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--            android:layout_width="0dp" android:layout_height="wrap_content"-->
+<!--            android:text="Đổi mật khẩu"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/btnTopProducts"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:layout_marginTop="12dp"/>-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btnLogout"-->
+<!--            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--            android:layout_width="0dp" android:layout_height="wrap_content"-->
+<!--            android:text="Đăng xuất"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/btnChangePass"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:layout_marginTop="16dp"/>-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--</ScrollView>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User___________________________________________________________"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_margin="20dp">
+        <TextView
+            android:id="@+id/btnUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/outline_contacts_product_24"
+            android:text="Danh sách kh"
+            />
+        <TextView
+            android:id="@+id/btnRevenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/outline_monitoring_24"
+            android:layout_marginLeft="20dp"
+            android:text="Doanh thu"/>
+        <TextView
+            android:id="@+id/btnTopProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/outline_moving_24"
+            android:text="Top Sản Phẩm"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/btnInvoices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/outline_contract_24"
+            android:text="Hóa Đơn"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btnGio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/outline_contract_24"
+        android:text="Giỏ hàng"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mật khẩu______________________________________________________"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <TextView
+            android:id="@+id/btnChangePass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/passkey"
+            android:text="Đổi Mật Khẩu"/>
+        <TextView
+            android:id="@+id/btnThongtin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông Tin"
+            android:drawableTop="@drawable/outline_user_attributes_24"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng Xuất"
+            app:backgroundTint="@null"
+            android:background="@drawable/btnout"/>
+    </LinearLayout>
+</LinearLayout>
